@@ -1,0 +1,230 @@
+/*
+Theme Name: Tembea Afrika Adventures
+Theme URI: https://tembeaafrika.com
+Author: Nimrod Musungu
+Author URI: https://nimrod.emerginghost.co.ke
+Description: Custom Gutenberg-based theme for Tembea Afrika Adventures
+Version: 1.0
+*/
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav .nav-menu li {
+  position: relative;
+}
+
+.main-nav .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.main-nav .nav-menu li:hover > a {
+  color: #fdd835;
+}
+
+/* Dropdown */
+.main-nav .nav-menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav .nav-menu li:hover ul {
+  display: block;
+}
+
+.main-nav .nav-menu li ul li {
+  margin: 0.5rem 0;
+}
+
+.main-nav .nav-menu li ul li a {
+  color: #fff;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .main-nav .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    padding: 1rem;
+  }
+
+  .main-nav.active .nav-menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-section .overlay,
+.hero-background .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-content span {
+  color: #fdd835;
+}
+
+.hero-content .subheading {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #f1f1f1;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background: #fdd835;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #fff176;
+}
+
+/* Reset and basic nav styling */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header nav li {
+  position: relative;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffffff; /* or a color from your Figma */
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #fdd835; /* hover color matching Figma yellow */
+}
+
+/* Submenu styling */
+header nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 4px;
+  z-index: 99;
+}
+
+header nav li:hover > ul {
+  display: flex;
+}
+
+header nav ul ul li a {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+header nav ul ul li a:hover {
+  color: #fdd835;
+}
