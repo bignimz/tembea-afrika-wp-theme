@@ -7,6 +7,12 @@ body {
   padding: 0;
 }
 
+a {
+  list-style-type: none;
+  color: #f0be61;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -89,14 +95,15 @@ p {
   font-weight: 600;
   margin-bottom: 20px;
   color: #111;
+  line-height: normal;
 }
 
 .bc_subtitle {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  margin-bottom: 5px;
   color: #111;
   text-transform: uppercase;
+  line-height: normal;
 }
 
 .bc_desc {
@@ -193,6 +200,7 @@ p {
 @media (min-width: 992px) {
   .container {
     width: 60% !important;
+    margin: 0 auto;
   }
 
   #imageWithContentOverlay .bc_row {

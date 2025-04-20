@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   // Helper function to initialize Owl Carousels
   function initializeOwlCarousel(selector, options) {
     $(selector).each(function () {
