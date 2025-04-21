@@ -55,6 +55,19 @@ function tembea_afrika_acf_blocks_init() {
             'mode'              => 'edit',
             'supports'          => ['align' => false]
         ]);
+
+        // Left Slider with Description Block
+        acf_register_block_type([
+            'name'              => 'left_slider',
+            'title'             => __('Left Slider Section'),
+            'description'       => __('Display a list of left image slider with description and links.'),
+            'render_template'   => 'template-parts/left_slider.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['left slider', 'image slider'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
     }
 }
 add_action('acf/init', 'tembea_afrika_acf_blocks_init');
