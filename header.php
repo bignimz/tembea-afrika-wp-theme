@@ -17,6 +17,7 @@
             'theme_location' => 'primary',
             'menu_class' => 'nav-menu',
             'container' => false,
+            'depth' => 0
           ));
         ?>
       </nav>

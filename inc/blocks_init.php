@@ -29,7 +29,32 @@ function tembea_afrika_acf_blocks_init() {
                 'anchor' => true,
             ]
         ]);
+
+        // Safaris Block
+        acf_register_block_type([
+            'name'              => 'safaris',
+            'title'             => __('Safaris Section'),
+            'description'       => __('Display a list of safaris with images and links.'),
+            'render_template'   => 'template-parts/safaris.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['safari', 'tours', 'travel'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
         
+        // Destinations Block
+        acf_register_block_type([
+            'name'              => 'destinations',
+            'title'             => __('Destinations Section'),
+            'description'       => __('Display a list of destinations with both circular and square images and links.'),
+            'render_template'   => 'template-parts/destinations.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['safari', 'tours', 'travel'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
     }
 }
 add_action('acf/init', 'tembea_afrika_acf_blocks_init');

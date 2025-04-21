@@ -7,6 +7,12 @@ body {
   padding: 0;
 }
 
+a {
+  list-style-type: none;
+  color: #f0be61;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -44,15 +50,13 @@ p {
 
 .container {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .iwco_block {
   padding: 50px 0;
-  /* max-width: 1130px;
-    margin: auto; */
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 80px; /* Reduced from 150px for mobile */
 }
 
 #imageWithContentOverlay .iwco_bg_text {
@@ -79,29 +83,30 @@ p {
 
 #imageWithContentOverlay .bc_row_right_col .bc_title {
   font-family: "Rubik One", sans-serif;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(1.6rem, 5vw, 3rem);
   font-weight: 600;
 }
 
 .bc_title {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(1.6rem, 5vw, 3rem);
   font-weight: 600;
   margin-bottom: 20px;
   color: #111;
+  line-height: normal;
 }
 
 .bc_subtitle {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 14px;
   color: #111;
   text-transform: uppercase;
+  line-height: normal;
 }
 
 .bc_desc {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #222;
@@ -111,7 +116,7 @@ p {
   display: flex;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: lowercase;
   color: #000;
@@ -119,11 +124,12 @@ p {
   position: relative;
   width: fit-content;
   text-decoration: none;
+  margin: 0 auto 20px; /* Center on mobile */
 }
 
 .bc_link_2 .bc_link_arrow {
-  width: 31px;
-  height: 31px;
+  width: 28px;
+  height: 28px;
   margin-left: 10px;
   display: flex;
   align-items: center;
@@ -156,6 +162,7 @@ p {
   position: relative;
   width: fit-content;
   text-decoration: none;
+  margin: 0 auto 20px; /* Center on mobile */
 }
 
 .bc_link .bc_link_arrow::before {
@@ -163,12 +170,9 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 31px;
-  height: 31px;
+  width: 28px;
+  height: 28px;
   margin-left: 10px;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
   background-color: #f0be61;
   transition: all ease 0.3s;
   color: #111;
@@ -187,109 +191,38 @@ p {
 }
 
 .bc_block_head {
-  margin-bottom: 80px;
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 60% !important;
-  }
-
-  #imageWithContentOverlay .bc_row {
-    display: flex;
-    align-items: center;
-    gap: 55px;
-    z-index: 99;
-  }
-
-  /* .bc_row_right_col {
-      max-width: 580px;
-      position: relative;
-    } */
-
-  .bc_row_left_col {
-    width: 522px;
-    position: relative;
-  }
-
-  #imageWithContentOverlay .iwco_bg_text {
-    font-family: "Poppins", sans-serif;
-    display: block;
-    font-size: 128px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.05);
-    z-index: -1;
-    position: absolute;
-    top: -45px;
-  }
-
-  #imageWithContentOverlay .bc_row_right_col .bc_title {
-    font-family: "Rubik One", sans-serif;
-    font-size: 48px;
-    font-weight: 800;
-    position: relative;
-  }
-
-  #imageWithContentOverlay .bc_row_right_col .bc_title::before {
-    position: absolute;
-    content: "";
-    top: -20px;
-    left: 0;
-    width: 120px;
-    height: 4px;
-    background-color: #f0be61;
-  }
-
-  .bc_row_left_col_image {
-    width: 522px;
-    height: 522px;
-    /* object-position: right; */
-  }
-
-  .bc_img_fluid {
-    width: 100%;
-    height: 100%;
-  }
-
-  .bc_row .bc_row_overlay {
-    position: absolute;
-    left: -58px;
-    bottom: -36px;
-    width: 337px;
-    height: 490px;
-    background-color: #f5deb3;
-    z-index: -1;
-  }
+  margin-bottom: 40px; /* Reduced from 80px for mobile */
+  text-align: center; /* Center text on mobile */
 }
 
 /* Slider With Header Description 1 */
 #sliderWithHeaderDescription1.swhd_block {
   background-color: #f5deb3;
-  padding: 100px 0px;
-  margin-bottom: 100px;
+  padding: 50px 0; /* Reduced from 100px for mobile */
+  margin-bottom: 50px; /* Reduced from 100px for mobile */
 }
 
 #sliderWithHeaderDescription1 .owl-nav {
-  float: right;
+  float: none; /* Changed from right to none */
   display: flex;
   margin-top: 20px;
+  justify-content: center; /* Center navigation on mobile */
 }
 
 .owl-nav button.disabled {
-  opacity: 0.5; /* Change opacity to indicate disabled state */
+  opacity: 0.5;
   pointer-events: none;
 }
 
 #sliderWithHeaderDescription1 .owl-nav button {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Reduced from 50px for mobile */
+  height: 40px; /* Reduced from 50px for mobile */
   border-radius: 50%;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 16px; /* Reduced from 20px for mobile */
   cursor: pointer;
 }
 
@@ -302,17 +235,18 @@ p {
 }
 
 .bc_content_row {
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Reduced from 50px for mobile */
 }
 
 .bc_safari_1 {
   position: relative;
-  height: 395px;
+  height: 300px; /* Reduced from 395px for mobile */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   align-content: flex-end;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px; /* Add spacing between slides on mobile */
 }
 
 .hidden {
@@ -324,11 +258,14 @@ p {
   padding: 10px;
   color: #fff;
   transition: height 0.5s ease;
+  position: absolute; /* Make sure it's positioned correctly */
+  bottom: 0; /* Position at bottom */
+  width: 100%; /* Full width */
 }
 
 .bc_safari_1_title {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 18px; /* Reduced from 20px for mobile */
   font-weight: bold;
 }
 
@@ -339,9 +276,10 @@ p {
 }
 
 .swhd_slide_row {
-  display: flex;
-  gap: 24px;
-  margin-top: 80px;
+  display: block; /* Changed from flex to block on mobile */
+  gap: 0; /* Remove gap on mobile */
+  margin-top: 40px; /* Reduced from 80px for mobile */
+  overflow: hidden; /* Prevent horizontal scroll */
 }
 
 .view_package_link {
@@ -358,12 +296,14 @@ p {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%; /* Control width on mobile */
+  text-align: center; /* Center text */
 }
 
 .cta_arrow {
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
+  width: 36px; /* Reduced from 40px for mobile */
+  height: 36px; /* Reduced from 40px for mobile */
+  font-size: 16px; /* Reduced from 18px for mobile */
   color: #111;
   border-radius: 50%;
   display: flex;
@@ -371,47 +311,16 @@ p {
   justify-content: center;
   background-color: #f0be61;
   position: relative;
-  top: 30px;
+  top: 25px; /* Adjusted for mobile */
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
-@media (min-width: 992px) {
-  .bc_content_row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 50px;
-  }
-
-  .bc_content_row-left {
-    width: 437px;
-  }
-
-  .bc_title {
-    font-family: "Poppins", sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    position: relative;
-  }
-
-  .swhd_slide_row {
-    max-width: 1130px;
-  }
-
-  #sliderWithHeaderDescription1 .own-nav button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: lightgray;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-}
-
 /* Slider with Header Description 2 */
 #sliderWithHeaderDescription2.swhd_2_block {
-  margin-bottom: 70px;
+  margin-bottom: 50px; /* Reduced from 70px for mobile */
+  padding: 0 10px; /* Add padding on mobile */
 }
 
 #sliderWithHeaderDescription2 .swhd_slide_row {
@@ -464,19 +373,20 @@ p {
 #sliderWithHeaderDescription2 .owl-nav button {
   border: none;
   background-color: transparent;
-  font-size: 28px;
+  font-size: 24px; /* Reduced from 28px for mobile */
   cursor: pointer;
 }
 
 .bc_safari_2 {
   position: relative;
   width: 100%;
-  height: 330px;
+  height: 250px; /* Reduced from 330px for mobile */
   aspect-ratio: 16/9;
   object-fit: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto; /* Center on mobile */
 }
 
 .bc_overlay {
@@ -489,67 +399,38 @@ p {
 }
 
 .bc_span_image {
-  display: none;
-  position: absolute;
-  width: 200px !important;
-  height: 200px;
-  border-radius: 50%;
-  border: 10px solid #fff;
-  top: 18%;
-  left: -110px;
+  display: none; /* Hidden on mobile */
 }
 
 .bc_safari_title {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
   font-weight: 600;
   color: #fff;
-  line-height: 1.5;
-}
-
-@media (min-width: 1000px) {
-  .bc_safari_2 {
-    position: relative;
-    width: 500px;
-    height: 330px;
-  }
-
-  .bc_span_image {
-    display: block;
-    position: absolute;
-    width: 224px !important;
-    height: 224px;
-    border-radius: 50%;
-    border: 10px solid #fff;
-    top: 18%;
-    left: -110px;
-  }
-
-  .bc_safari_title {
-    font-size: 32px !important;
-    font-weight: 800;
-    line-height: 1;
-  }
+  line-height: 1.3;
+  text-align: center; /* Center on mobile */
 }
 
 /* Left Image Slider With Header Description Section */
-
 #LeftSliderWithHeaderDescription.swhd_block {
   background-color: #f5deb3;
-  padding: 100px 0px;
-  margin-bottom: 70px;
+  padding: 50px 0; /* Reduced from 100px for mobile */
+  margin-bottom: 50px; /* Reduced from 70px for mobile */
 }
 
 #LeftSliderWithHeaderDescription .owl-nav {
-  float: right;
-  position: relative;
-  top: -70px;
+  float: none; /* Changed from right to none */
+  position: static; /* Changed from relative to static */
+  top: 0; /* Reset top value */
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Add margin top */
 }
 
 #LeftSliderWithHeaderDescription .owl-nav button {
-  width: 70px;
-  height: 70px;
-  font-size: 28px;
+  width: 50px; /* Reduced from 70px for mobile */
+  height: 50px; /* Reduced from 70px for mobile */
+  font-size: 20px; /* Reduced from 28px for mobile */
   border: none;
   cursor: pointer;
 }
@@ -565,11 +446,6 @@ p {
 .liswhd_row {
   display: block;
 }
-/* 
-  #righttSliderWithHeaderDescription .liswhd_row {
-    display: flex;
-    flex-direction: column-reverse;
-  } */
 
 .liswhd_left_col {
   margin-bottom: 30px;
@@ -577,15 +453,16 @@ p {
 
 .bc_title2 {
   font-family: "Poppins", sans-serif;
-  font-size: 32px;
+  font-size: 24px; /* Reduced from 32px for mobile */
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center; /* Center on mobile */
 }
 
 .liswhd_item {
   position: relative;
   width: 100%;
-  height: 330px;
+  height: 250px; /* Reduced from 330px for mobile */
   aspect-ratio: 16/9;
   object-fit: contain;
   background-repeat: no-repeat;
@@ -595,21 +472,23 @@ p {
 
 .bc_minititle {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 18px; /* Reduced from 20px for mobile */
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center; /* Center on mobile */
 }
 
 .bc_bullets {
   margin-bottom: 20px;
+  padding: 0 15px; /* Add padding on mobile */
 }
 
 .bc_bullet {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px; /* Reduced from 16px for mobile */
   margin-bottom: 10px;
   margin-left: 20px;
 }
@@ -620,7 +499,262 @@ p {
   left: -20px;
 }
 
+/* Right Slider with Header Description */
+#righttSliderWithHeaderDescription.swhd_block {
+  padding: 50px 0; /* Reduced from 70px for mobile */
+  margin-bottom: 50px; /* Reduced from 70px for mobile */
+}
+
+#righttSliderWithHeaderDescription .owl-nav {
+  position: static; /* Changed from relative to static */
+  top: 0; /* Reset top value */
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Add margin top */
+}
+
+#righttSliderWithHeaderDescription .owl-nav button {
+  width: 50px; /* Reduced from 70px for mobile */
+  height: 50px; /* Reduced from 70px for mobile */
+  font-size: 20px; /* Reduced from 28px for mobile */
+  border: none;
+  cursor: pointer;
+}
+
+#righttSliderWithHeaderDescription .owl-nav button:not(:last-child) {
+  border-right: 1px solid #a0a0a0;
+}
+
+#righttSliderWithHeaderDescription .owl-nav button:hover {
+  background-color: #f0be61;
+}
+
+/* Partners Section */
+#partnersSlider.bc_partners {
+  margin-bottom: 50px; /* Reduced from 70px for mobile */
+  padding: 0 15px; /* Add padding on mobile */
+}
+
+#partnersSlider .bc_partners_logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Reduced from 30px for mobile */
+}
+
+#partnersSlider .partners_title {
+  margin-bottom: 30px; /* Reduced from 50px for mobile */
+  text-align: center;
+}
+
+#partnersSlider .bc_logo {
+  width: 120px; /* Reduced from 150px for mobile */
+  height: 80px; /* Reduced from 100px for mobile */
+  margin-bottom: 15px; /* Reduced from 20px for mobile */
+  margin-right: 15px; /* Reduced from 20px for mobile */
+}
+
+#partnersSlider .bc_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .bc_block_head {
+    margin-bottom: 60px;
+    text-align: left; /* Align left on tablet+ */
+  }
+
+  .bc_link_2,
+  .bc_link {
+    margin: 0 0 20px; /* Left-align on tablet+ */
+  }
+
+  .bc_subtitle {
+    font-size: 16px;
+  }
+
+  .bc_desc {
+    font-size: 18px;
+  }
+
+  #sliderWithHeaderDescription1.swhd_block {
+    padding: 70px 0;
+  }
+
+  .bc_safari_1 {
+    height: 350px;
+  }
+
+  .swhd_slide_row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .bc_title2 {
+    text-align: left;
+    font-size: 28px;
+  }
+
+  .bc_minititle {
+    text-align: left;
+  }
+}
+
 @media (min-width: 992px) {
+  .container {
+    width: 60% !important;
+    margin: 0 auto;
+  }
+
+  .iwco_block {
+    margin-bottom: 150px;
+  }
+
+  #imageWithContentOverlay .bc_row {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    z-index: 99;
+  }
+
+  .bc_row_left_col {
+    width: 522px;
+    position: relative;
+  }
+
+  #imageWithContentOverlay .iwco_bg_text {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    font-size: 128px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    position: absolute;
+    top: -45px;
+  }
+
+  #imageWithContentOverlay .bc_row_right_col .bc_title {
+    font-family: "Rubik One", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    position: relative;
+  }
+
+  #imageWithContentOverlay .bc_row_right_col .bc_title::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background-color: #f0be61;
+  }
+
+  .bc_row_left_col_image {
+    width: 522px;
+    height: 522px;
+  }
+
+  .bc_img_fluid {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bc_row .bc_row_overlay {
+    position: absolute;
+    left: -58px;
+    bottom: -36px;
+    width: 337px;
+    height: 490px;
+    background-color: #f5deb3;
+    z-index: -1;
+  }
+
+  .bc_block_head {
+    margin-bottom: 80px;
+  }
+
+  #sliderWithHeaderDescription1.swhd_block {
+    padding: 100px 0px;
+    margin-bottom: 100px;
+  }
+
+  #sliderWithHeaderDescription1 .owl-nav {
+    float: right;
+    justify-content: flex-end;
+  }
+
+  #sliderWithHeaderDescription1 .owl-nav button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .bc_content_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+
+  .bc_content_row-left {
+    width: 437px;
+  }
+
+  .bc_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    position: relative;
+  }
+
+  .swhd_slide_row {
+    max-width: 1130px;
+    gap: 24px;
+    margin-top: 80px;
+  }
+
+  .bc_safari_1 {
+    height: 395px;
+    margin-bottom: 0;
+  }
+
+  #sliderWithHeaderDescription1 .own-nav button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .bc_safari_2 {
+    width: 500px;
+    height: 330px;
+  }
+
+  .bc_span_image {
+    display: block;
+    position: absolute;
+    width: 200px !important;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    top: 18%;
+    left: -80px;
+  }
+
+  .bc_safari_title {
+    font-size: 32px !important;
+    font-weight: 800;
+    line-height: 1;
+    float: right;
+    max-width: 300px;
+  }
+
   .liswhd_row {
     display: flex;
     align-items: center;
@@ -651,17 +785,6 @@ p {
     z-index: 1;
   }
 
-  /* .liswhd_left_col::after {
-      position: absolute;
-      content: "";
-      bottom: -16px;
-      left: 0;
-      width: 100%;
-      height: 30px;
-      background-image: url("https://img.freepik.com/free-vector/pattern-background-tribal-seamless-aztec-design-black-white-geometric-style-vector_53876-154220.jpg");
-      background-position: center;
-    } */
-
   .liswhd_item {
     width: 100%;
     height: 573px;
@@ -683,68 +806,40 @@ p {
   .liswhd_left_col_2 {
     width: 448px;
   }
-}
 
-/* Right Slider with Header Description */
+  #LeftSliderWithHeaderDescription .owl-nav {
+    float: right;
+    position: relative;
+    top: -70px;
+  }
 
-#righttSliderWithHeaderDescription.swhd_block {
-  padding: 70px 0px;
-  margin-bottom: 70px;
-}
+  #LeftSliderWithHeaderDescription .owl-nav button {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
 
-#righttSliderWithHeaderDescription .owl-nav {
-  position: relative;
-  top: -70px;
-}
+  #LeftSliderWithHeaderDescription.swhd_block {
+    padding: 100px 0px;
+    margin-bottom: 70px;
+  }
 
-#righttSliderWithHeaderDescription .owl-nav button {
-  width: 70px;
-  height: 70px;
-  font-size: 28px;
-  border: none;
-  cursor: pointer;
-}
+  #righttSliderWithHeaderDescription.swhd_block {
+    padding: 70px 0px;
+    margin-bottom: 70px;
+  }
 
-#righttSliderWithHeaderDescription .owl-nav button:not(:last-child) {
-  border-right: 1px solid #a0a0a0;
-}
+  #righttSliderWithHeaderDescription .owl-nav {
+    position: relative;
+    top: -70px;
+  }
 
-#righttSliderWithHeaderDescription .owl-nav button:hover {
-  background-color: #f0be61;
-}
+  #righttSliderWithHeaderDescription .owl-nav button {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
 
-/* Partners Section */
-
-#partnersSlider.bc_partners {
-  margin-bottom: 70px;
-}
-
-#partnersSlider .bc_partners_logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-#partnersSlider .partners_title {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-#partnersSlider .bc_logo {
-  width: 150px;
-  height: 100px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-#partnersSlider .bc_logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@media (min-width: 992px) {
   #partnersSlider.bc_partners {
     margin-bottom: 100px;
   }
@@ -753,10 +848,18 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
   }
 
   #partnersSlider .partners_title {
     margin-bottom: 95px;
     text-align: left;
+  }
+
+  #partnersSlider .bc_logo {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 }
