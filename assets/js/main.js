@@ -31,6 +31,7 @@ jQuery(document).ready(function ($) {
   initializeOwlCarousel(".owl-carousel", {
     ...commonOptions,
     margin: 30,
+    loo: true,
     responsive: {
       0: {
         items: 1,
@@ -90,6 +91,26 @@ jQuery(document).ready(function ($) {
   initializeOwlCarousel(".liswhd_right_col_2", {
     ...commonOptions,
     margin: 130,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: true,
+      },
+      1000: {
+        items: 1,
+        nav: true,
+      },
+    },
+  });
+
+  initializeOwlCarousel(".review-content", {
+    ...commonOptions,
+    margin: 100,
     dots: false,
     responsive: {
       0: {

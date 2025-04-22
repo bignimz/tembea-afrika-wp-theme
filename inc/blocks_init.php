@@ -107,6 +107,19 @@ function tembea_afrika_acf_blocks_init() {
             'mode'              => 'edit',
             'supports'          => ['align' => false]
         ]);
+
+        // Reviews Block
+        acf_register_block_type([
+            'name'              => 'reviews',
+            'title'             => __('Reviews Section'),
+            'description'       => __('Display reviews text with author names only in a slider'),
+            'render_template'   => 'template-parts/reviews.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['reviews', 'testimonials'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
     }
 }
 add_action('acf/init', 'tembea_afrika_acf_blocks_init');
