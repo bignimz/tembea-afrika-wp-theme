@@ -159,4 +159,6 @@ jQuery(document).ready(function ($) {
 
     cta.toggleClass("hidden", !isMouseEnter);
   }
+
+  AOS.init();
 });

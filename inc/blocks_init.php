@@ -60,11 +60,50 @@ function tembea_afrika_acf_blocks_init() {
         acf_register_block_type([
             'name'              => 'left_slider',
             'title'             => __('Left Slider Section'),
-            'description'       => __('Display a list of left image slider with description and links.'),
+            'description'       => __('This block displays a slider with descriptive text. Upload multiple images for a carousel effect.'),
             'render_template'   => 'template-parts/left_slider.php',
             'category'          => 'layout',
             'icon'              => 'location-alt',
             'keywords'          => ['left slider', 'image slider'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
+
+        // Right Slider with Description Block
+        acf_register_block_type([
+            'name'              => 'right_slider',
+            'title'             => __('Right Slider Section'),
+            'description'       => __('Display a list of right image slider with description and links.'),
+            'render_template'   => 'template-parts/left_slider.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['right slider', 'image slider'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
+
+        // Partners Block
+        acf_register_block_type([
+            'name'              => 'partners',
+            'title'             => __('Partners and Accreditations Section'),
+            'description'       => __('Display a list of partners logos'),
+            'render_template'   => 'template-parts/partners.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['partners'],
+            'mode'              => 'edit',
+            'supports'          => ['align' => false]
+        ]);
+
+        // Page Header Block
+        acf_register_block_type([
+            'name'              => 'page_header',
+            'title'             => __('Page Header Section'),
+            'description'       => __('Display a page title, subtitle, description and CTA button'),
+            'render_template'   => 'template-parts/page_header.php',
+            'category'          => 'layout',
+            'icon'              => 'location-alt',
+            'keywords'          => ['page header', 'header'],
             'mode'              => 'edit',
             'supports'          => ['align' => false]
         ]);

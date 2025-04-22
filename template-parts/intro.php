@@ -7,7 +7,7 @@ $linkText = get_field('link_text');
 $linkUrl = get_field('link_url');
 ?>
 
-<section id="imageWithContentOverlay" class="iwco_block">
+<section id="imageWithContentOverlay" class="iwco_block" data-aos="fade-up">
   <div class="container">
     <?php if($bgText): ?>
     <div class="iwco_bg_text"><?php esc_html_e($bgText); ?></div>

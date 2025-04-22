@@ -1,10 +1,10 @@
 {
-    "key": "group_680603ea7d89e",
-    "title": "Left Slider With Description Block",
+    "key": "group_6806274e38db8",
+    "title": "Right Slider With Description Block",
     "fields": [
         {
-            "key": "field_68060544362c4",
-            "label": "Image Slider With Description",
+            "key": "field_6806274e4215f",
+            "label": "Right Image Slider With Description",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -21,9 +21,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_6806a2510a6f1",
-            "label": "Right Image Layout",
-            "name": "right_image_layout",
+            "key": "field_68069d977d9cc",
+            "label": "Left \/ Right Image",
+            "name": "left__right_image",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -34,14 +34,14 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Toggle this switch ON to place images on the right side (with white background). Leave OFF for images on the left side (default layout).",
-            "default_value": 0,
-            "ui_on_text": "Right Image",
-            "ui_off_text": "Left Image",
+            "message": "Toggle to switch block to have the image slider either on the left or right",
+            "default_value": 1,
+            "ui_on_text": "Left Image Slide",
+            "ui_off_text": "Right Image Slide",
             "ui": 1
         },
         {
-            "key": "field_680603eb0818d",
+            "key": "field_6806274e4761b",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -61,7 +61,7 @@
             "append": ""
         },
         {
-            "key": "field_680604220818e",
+            "key": "field_6806274e4a750",
             "label": "Subtitle",
             "name": "subtitle",
             "aria-label": "",
@@ -81,7 +81,7 @@
             "append": ""
         },
         {
-            "key": "field_680604370818f",
+            "key": "field_6806274e4f45f",
             "label": "Description",
             "name": "description",
             "aria-label": "",
@@ -101,7 +101,7 @@
             "new_lines": ""
         },
         {
-            "key": "field_6806048808190",
+            "key": "field_6806274e52974",
             "label": "Slider Images",
             "name": "slider_images",
             "aria-label": "",
@@ -123,7 +123,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6806049c08191",
+                    "key": "field_6806274e885de",
                     "label": "image",
                     "name": "image",
                     "aria-label": "",
@@ -146,12 +146,12 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_6806048808190"
+                    "parent_repeater": "field_6806274e52974"
                 }
             ]
         },
         {
-            "key": "field_680604b908192",
+            "key": "field_6806274e5979c",
             "label": "Bullets Title",
             "name": "bullets_title",
             "aria-label": "",
@@ -171,7 +171,7 @@
             "append": ""
         },
         {
-            "key": "field_680604d408193",
+            "key": "field_6806274e5cd81",
             "label": "Bullets",
             "name": "bullets",
             "aria-label": "",
@@ -193,7 +193,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_680604e008194",
+                    "key": "field_6806274eb2e69",
                     "label": "Bullet",
                     "name": "bullet",
                     "aria-label": "",
@@ -211,12 +211,12 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_680604d408193"
+                    "parent_repeater": "field_6806274e5cd81"
                 }
             ]
         },
         {
-            "key": "field_6806051408195",
+            "key": "field_6806274e60a73",
             "label": "Link Text",
             "name": "link_text",
             "aria-label": "",
@@ -236,7 +236,7 @@
             "append": ""
         },
         {
-            "key": "field_6806052108196",
+            "key": "field_6806274e645c3",
             "label": "Link Url",
             "name": "link_url",
             "aria-label": "",
@@ -257,7 +257,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/left-slider"
+                "value": "acf\/right-slider"
             }
         ]
     ],
@@ -270,5 +270,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1745266538
+    "modified": 1745264267
 }

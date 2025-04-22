@@ -7,13 +7,18 @@ $images = get_field('slider_images');
 $bullets = get_field('bullets');
 $linkText = get_field('link_text');
 $linkUrl = get_field('link_url');
+$rightImageLayout = get_field('right_image_layout');
+
+// classes based on the toggle
+$rowClass = $rightImageLayout ? 'liswhd_row right_block' : 'liswhd_row';
+$sectionClass = $rightImageLayout ? 'swhd_block default' : 'swhd_block';
 ?>
 
-<section id="LeftSliderWithHeaderDescription" class="swhd_block">
+<section id="LeftSliderWithHeaderDescription" class="<?php echo esc_attr($sectionClass); ?>">
     <div class="container">
-        <div class="liswhd_row">
+        <div class="<?php echo esc_attr($rowClass); ?>">
             <?php if($images): ?>
-          <div class="liswhd_left_col">
+          <div class="liswhd_left_col" data-aos="fade-right">
             <?php foreach($images as $image): ?>
                 <?php 
                 $sliderImg = $image['image']['url'];    
@@ -27,7 +32,7 @@ $linkUrl = get_field('link_url');
             <?php endforeach; ?>
           </div>
           <?php endif; ?>
-          <div class="liswhd_right_col">
+          <div class="liswhd_right_col" data-aos="fade-left">
             <?php if($subTitle): ?>
             <p class="bc_subtitle"><?php echo esc_html($subTitle); ?></p>
             <?php endif; ?>
