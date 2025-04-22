@@ -5,7 +5,7 @@ $description = get_field('description');
 $destinations = get_field('destinations'); // Get the repeater field
 ?>
 
-<section id="sliderWithHeaderDescription2" class="swhd_2_block">
+<section id="sliderWithHeaderDescription2" class="swhd_2_block" data-aos="fade-up">
     <div class="container">
         <?php if(!empty($heading) || !empty($subHeading) || !empty($description)): ?>
         <div class="bc_block_head">

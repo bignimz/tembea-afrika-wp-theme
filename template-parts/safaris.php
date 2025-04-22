@@ -9,24 +9,24 @@ $safaris = get_field('safaris');
 
 <section id="sliderWithHeaderDescription1" class="swhd_block">
       <div class="container">
-          <div class="bc_content_row">
-              <div class="bc_content_row-left">
-                  <p class="bc_subtitle"><?php echo esc_html($subHeading); ?></p>
-            <?php if ($heading): ?>
-                <h2 class="bc_title"><?php echo esc_html($heading); ?></h2>
-            <?php endif; ?>
-          </div>
-          <div class="bc_content_row-right">
-            <p class="bc_desc"><?php echo esc_html($desc); ?></p>
-            <?php if($mainLinkText): ?>
-            <div class="mb-30">
-              <a href="<?php echo esc_url($mainLinkUrl); ?>" class="bc_link_2" style="float: right"
-                ><?php echo esc_html($mainLinkText); ?> <span class="bc_link_arrow">&rarr;</span></a
-              >
+          <div class="bc_content_row" data-aos="fade-up">
+            <div class="bc_content_row-left">
+              <p class="bc_subtitle"><?php echo esc_html($subHeading); ?></p>
+              <?php if ($heading): ?>
+              <h2 class="bc_title"><?php echo esc_html($heading); ?></h2>
+              <?php endif; ?>
+            </div>  
+            <div class="bc_content_row-right" data-aos="fade-up">
+              <p class="bc_desc"><?php echo esc_html($desc); ?></p>
+              <?php if($mainLinkText): ?>
+              <div class="mb-30">
+                <a href="<?php echo esc_url($mainLinkUrl); ?>" class="bc_link_2" style="float: right"
+                  ><?php echo esc_html($mainLinkText); ?> <span class="bc_link_arrow">&rarr;</span></a
+                >
+              </div>
+              <?php endif; ?>
             </div>
-            <?php endif; ?>
           </div>
-        </div>
 
 
     <?php if ($safaris): ?>

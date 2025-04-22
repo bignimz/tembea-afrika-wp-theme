@@ -31,6 +31,7 @@ jQuery(document).ready(function ($) {
   initializeOwlCarousel(".owl-carousel", {
     ...commonOptions,
     margin: 30,
+    loo: true,
     responsive: {
       0: {
         items: 1,
@@ -107,6 +108,26 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  initializeOwlCarousel(".review-content", {
+    ...commonOptions,
+    margin: 100,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: true,
+      },
+      1000: {
+        items: 1,
+        nav: true,
+      },
+    },
+  });
+
   // Update navigation buttons state
   function updateNavButtons(event) {
     const items = event.item.count;
@@ -159,4 +180,6 @@ jQuery(document).ready(function ($) {
 
     cta.toggleClass("hidden", !isMouseEnter);
   }
+
+  AOS.init();
 });
