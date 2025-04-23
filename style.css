@@ -5,6 +5,7 @@ Author: Nimrod Musungu
 Author URI: https://nimrod.emerginghost.co.ke
 Description: Custom Gutenberg-based theme for Tembea Afrika Adventures
 Version: 1.0
+text-domain: tembea_afrika
 */
 
 /* Basic Reset */
@@ -77,6 +78,7 @@ body {
   left: 0;
   background: #222;
   padding: 0.5rem 1rem;
+  width: 200px;
 }
 
 .main-nav .nav-menu li:hover ul {
@@ -163,7 +165,8 @@ body {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.8rem 2rem;
-  background: #fdd835;
+  border-radius: 5px;
+  background: #f0ad4e;
   color: #000;
   font-weight: bold;
   text-decoration: none;
@@ -189,17 +192,55 @@ header nav li {
 }
 
 header nav a {
+  position: relative;
   text-decoration: none;
-  color: #ffffff; /* or a color from your Figma */
+  color: #333;
+  font-size: 18px;
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  display: inline-block;
+  padding: 10px 5px;
   transition: color 0.3s ease;
+  display: inline-block;
+}
+
+header nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #f0ad4e;
+  transition: all 0.3s ease;
 }
 
 header nav a:hover {
-  color: #fdd835; /* hover color matching Figma yellow */
+  color: #f0ad4e;
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+/* Glow effect */
+header nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f0ad4e;
+  border-radius: 30px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transition: all 0.4s ease;
+  transform: scale(0.8);
+}
+
+header nav a:hover::after {
+  opacity: 0.2;
+  transform: scale(1);
 }
 
 /* Submenu styling */

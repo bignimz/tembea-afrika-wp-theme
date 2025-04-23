@@ -918,6 +918,7 @@ p {
   color: white;
   padding: 2rem;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .page-header::before {
@@ -1272,4 +1273,301 @@ p {
     font-size: 28px;
     border: none;
   }
+}
+
+/* Heading Block */
+.heading-section {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+
+.heading-section .heading-section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-section .heading-section-row .heading-block h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.heading-section .heading-section-row .heading-block p {
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+/* .wp-block-latest-posts.wp-block-latest-posts__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 27px;
+} */
+
+.insights-row {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* BLOG INSIGHTS */
+.blog-posts-grid {
+  margin: 30px 0;
+}
+
+.blog-post-item {
+  margin-bottom: 30px;
+}
+
+.blog-post-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-post-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-post-card:hover .blog-post-image img {
+  transform: scale(1.05);
+}
+
+.blog-post-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f0ad4e;
+  color: #fff;
+  padding: 5px 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.blog-post-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-post-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.blog-post-title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post-title a:hover {
+  color: #f0ad4e;
+}
+
+.blog-post-excerpt {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.blog-post-readmore {
+  text-align: right;
+}
+
+.blog-post-readmore .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0ad4e;
+  border-radius: 50%;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.blog-post-readmore .read-more:hover {
+  background-color: #e09b3d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .blog-post-item {
+    flex: 0 0 calc(50% - 30px) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-post-item {
+    flex: 0 0 calc(100% - 30px) !important;
+  }
+}
+
+/* CTA BLOCK */
+.safari-booking-section {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.safari-booking-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+
+.safari-booking-content {
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.safari-booking-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.safari-booking-description {
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.safari-booking-btn {
+  display: inline-block;
+  background-color: #f0ad4e;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.safari-booking-btn:hover {
+  background-color: #eea236;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .safari-booking-title {
+    font-size: 42px;
+  }
+
+  .safari-booking-description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .safari-booking-section {
+    min-height: 400px;
+    padding: 50px 15px;
+  }
+
+  .safari-booking-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .safari-booking-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .safari-booking-btn {
+    font-size: 16px;
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .safari-booking-section {
+    min-height: 350px;
+    padding: 40px 15px;
+  }
+
+  .safari-booking-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .safari-booking-description {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .safari-booking-btn {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+}
+
+/* HEADING AND DESCRIPTION BLOCK */
+.header-description-block {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.header-description-block .header-desc-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+
+.header-description-block .header-desc-subtitle {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.header-description-block .header-description-block-description {
+  font-size: 18px;
+  margin-bottom: 20px;
 }

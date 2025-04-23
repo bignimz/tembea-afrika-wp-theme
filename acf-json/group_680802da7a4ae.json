@@ -1,11 +1,11 @@
 {
-    "key": "group_6804f4f983530",
-    "title": "Intro Block",
+    "key": "group_680802da7a4ae",
+    "title": "CTA Block",
     "fields": [
         {
-            "key": "field_6804f4f9eb3db",
-            "label": "Background Text",
-            "name": "background_text",
+            "key": "field_680802dbaac0a",
+            "label": "CTA Title",
+            "name": "cta_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,9 +23,9 @@
             "append": ""
         },
         {
-            "key": "field_6804f555eb3dc",
-            "label": "Heading",
-            "name": "heading",
+            "key": "field_68080301aac0b",
+            "label": "CTA Description",
+            "name": "cta_description",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -43,54 +43,9 @@
             "append": ""
         },
         {
-            "key": "field_6804f56beb3dd",
-            "label": "Intro Text",
-            "name": "intro_text",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_6804f5a2eb3de",
-            "label": "Image",
-            "name": "image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_6804f5b2eb3df",
-            "label": "Link Text",
-            "name": "link_text",
+            "key": "field_68080317aac0c",
+            "label": "CTA Button Text",
+            "name": "cta_button_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -108,9 +63,9 @@
             "append": ""
         },
         {
-            "key": "field_6804f5c5eb3e0",
-            "label": "Link URL",
-            "name": "link_url",
+            "key": "field_6808032baac0d",
+            "label": "CTA Button Link",
+            "name": "cta_button_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -122,6 +77,31 @@
                 "id": ""
             },
             "return_format": "url"
+        },
+        {
+            "key": "field_68080349aac0e",
+            "label": "Background Image",
+            "name": "background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -129,7 +109,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/intro"
+                "value": "acf\/cta"
             }
         ]
     ],
@@ -141,6 +121,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1745409231
+    "show_in_rest": 0,
+    "modified": 1745356454
 }

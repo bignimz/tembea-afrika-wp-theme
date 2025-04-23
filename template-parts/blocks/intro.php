@@ -10,7 +10,7 @@ $linkUrl = get_field('link_url');
 <section id="imageWithContentOverlay" class="iwco_block" data-aos="fade-up">
   <div class="container">
     <?php if($bgText): ?>
-    <div class="iwco_bg_text"><?php esc_html_e($bgText); ?></div>
+    <div class="iwco_bg_text" data-aos="zoom-in-up" data-aos-delay="900"><?php esc_html_e($bgText); ?></div>
     <?php endif; ?>
     <div class="bc_row">
     <?php if ($image && is_array($image)): ?>
@@ -30,7 +30,7 @@ $linkUrl = get_field('link_url');
         <h1 class="bc_title"><?php esc_html_e($heading); ?></h1>
         <?php endif; ?>
         <?php if($introContent): ?>
-        <p class="bc_desc"><?php echo esc_html($introContent); ?></p>
+        <p class="bc_desc"><?php echo wp_kses_post($introContent); ?></p>
         <?php endif; ?>
         <?php if($linkText): ?>
         <a href="<?php echo esc_url($linkUrl); ?>" class="bc_link_2">

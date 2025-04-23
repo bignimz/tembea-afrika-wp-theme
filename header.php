@@ -6,11 +6,25 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header class="site-header">
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'tembea-afrika' ); ?></a>
+  
+  <header id="masthead" class="site-header">
     <div class="container">
-      <div class="logo">
-        <a href="<?php echo home_url(); ?>">Tembea</a>
+      <div class="site-branding logo">
+        <?php the_custom_logo(); ?>
+
+      <?php if ( is_front_page() && is_home() ) : ?>
+        <h1 class="site-title">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
+      <?php endif; ?>
       </div>
+
+      
       <nav class="main-nav">
         <?php
           wp_nav_menu(array(

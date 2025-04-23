@@ -1,29 +1,9 @@
 {
-    "key": "group_6804f4f983530",
-    "title": "Intro Block",
+    "key": "group_68089cf4e4f2e",
+    "title": "Heading With Description Block",
     "fields": [
         {
-            "key": "field_6804f4f9eb3db",
-            "label": "Background Text",
-            "name": "background_text",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6804f555eb3dc",
+            "key": "field_68089cf5de055",
             "label": "Heading",
             "name": "heading",
             "aria-label": "",
@@ -43,54 +23,9 @@
             "append": ""
         },
         {
-            "key": "field_6804f56beb3dd",
-            "label": "Intro Text",
-            "name": "intro_text",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_6804f5a2eb3de",
-            "label": "Image",
-            "name": "image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_6804f5b2eb3df",
-            "label": "Link Text",
-            "name": "link_text",
+            "key": "field_68089d12de056",
+            "label": "Sub Heading",
+            "name": "sub_heading",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -108,9 +43,49 @@
             "append": ""
         },
         {
-            "key": "field_6804f5c5eb3e0",
-            "label": "Link URL",
-            "name": "link_url",
+            "key": "field_68089d1ede057",
+            "label": "Description",
+            "name": "description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_68089d2ede058",
+            "label": "Button Text",
+            "name": "button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68089d3bde059",
+            "label": "Button Link",
+            "name": "button_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -129,7 +104,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/intro"
+                "value": "acf\/header-description"
             }
         ]
     ],
@@ -141,6 +116,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1745409231
+    "show_in_rest": 0,
+    "modified": 1745409410
 }
